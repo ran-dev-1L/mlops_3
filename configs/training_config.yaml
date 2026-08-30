@@ -1,0 +1,14 @@
+model:
+  architecture: simple_cnn
+  num_classes: 10
+training:
+  epochs: 10
+  batch_size: 64
+  learning_rate: 0.001
+  early_stopping_patience: 3
+data:
+  dataset: fashion_mnist
+  data_dir: ./data
+output:
+  checkpoint_dir: ./checkpoints
+  model_name: classifier_v1.pt
